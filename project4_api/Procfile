@@ -1,1 +1,1 @@
-web: gunicorn project4_api.wsgi
+web: python settings.py
