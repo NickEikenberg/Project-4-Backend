@@ -14,6 +14,7 @@ from pathlib import Path
 import dj_database_url
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -142,5 +143,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+# Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
