@@ -34,7 +34,9 @@ ALLOWED_HOSTS = ['localhost', 'one-good-thing.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'dj_database_url'
+    'gunicorn',
+    'whitenoise',
+    'dj_database_url',
     'corsheaders',
     'rest_framework',
     'messages_api',
