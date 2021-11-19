@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['localhost', 'one-good-thing.herokuapp.com/']
 # Application definition
 
 INSTALLED_APPS = [
-    'django_heroku',
+
     'gunicorn',
     'whitenoise',
     'dj_database_url',
@@ -148,6 +148,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Configure Django App for Heroku.
-import django_heroku
-django_heroku.settings(locals())
