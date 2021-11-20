@@ -6,7 +6,7 @@ from .models import Message
 # Create your views here.
 
 class MessageList(generics.ListCreateAPIView):
-    queryset = Message.objects.all().order_by('id')
+    queryset = Message.objects.all().order_by('-id')
     serializer_class = MessageSerializer
 
 class MessageDetail(generics.RetrieveUpdateDestroyAPIView):
